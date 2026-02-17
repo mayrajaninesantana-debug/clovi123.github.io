@@ -1,37 +1,252 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Clovi Studio</title>
-    <style>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ELENMOX | Urban Fashion Movement</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e60000",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#230f0f",
+                        "deep-blue": "#0a1128",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
         body {
-            background-color: #111;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 100px;
+            font-family: "Space Grotesk", sans-serif;
+            background-color: #ffffff;
         }
-        h1 {
-            font-size: 50px;
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        p {
-            font-size: 20px;
-            color: #ccc;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: crimson;
-            color: white;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
+        .text-stroke {
+            -webkit-text-stroke: 1px #181010;
+            color: transparent;
         }
     </style>
 </head>
-<body>
-
-    <h1>Clovi Web Studio</h1>
-    <p>Creo páginas web modernas con IA y estrategia.</p>
-    <button>Contáctame</button>
-
-</body>
-</html>
+<body class="bg-white text-[#181010] selection:bg-primary selection:text-white">
+<!-- Top Navigation -->
+<nav class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-[#f0f0f0] px-6 lg:px-20 py-4">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-12">
+<a class="flex items-center gap-2" href="#">
+<div class="size-6 bg-[#181010] flex items-center justify-center">
+<span class="text-white text-[10px] font-bold">EX</span>
+</div>
+<h2 class="text-[#181010] text-xl font-bold tracking-tighter uppercase">ELENMOX</h2>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Shop</a>
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Drops</a>
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Campaign</a>
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">About</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</button>
+<button class="hover:text-primary transition-colors relative">
+<span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[9px] font-bold rounded-full size-4 flex items-center justify-center">0</span>
+</button>
+<button class="hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">person</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative w-full h-[90vh] bg-white overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 opacity-90">
+<img alt="High fashion model in urban concrete setting" class="w-full h-full object-cover object-center" data-alt="High fashion model posing in urban concrete environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCghPsEC63MLCC8dI6Hi1FqBfsFheIj5YMxzRkHG9pEG_bnVi5AJS5_trAZbyoBdP1wcZYA7xFA92NR0W_WRGeHYjFUlwREjit3JPcvy9zClOrJMOB6j_AZUIhKvlkpv3peYZtteyzeFJa6Hghvf-8j-DmO1WTNdsk3pbIV6pAMPnT4IfHWn57SsnEe_bdpjm8vi2auVmx1AnFWMEzOJEMJLt_Tej2pHsFL9yCnfkzk7co_TCnHTyiCbSnJdqe0LkgXDJfvHTFFJaQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-4">
+<h1 class="text-[#181010] text-7xl md:text-[140px] font-bold leading-none tracking-tighter mb-4">
+                ELENMOX
+            </h1>
+<p class="text-[#181010] text-base md:text-xl font-medium tracking-[0.2em] uppercase mb-10">
+                No género. No reglas. Just presence.
+            </p>
+<button class="bg-primary text-white px-10 py-4 text-sm font-bold tracking-widest uppercase hover:bg-black transition-all duration-300">
+                Shop Now
+            </button>
+</div>
+</section>
+<!-- New Drop Preview -->
+<section class="py-24 px-6 lg:px-20 max-w-[1440px] mx-auto">
+<div class="flex items-end justify-between mb-12 border-b border-[#181010]/10 pb-6">
+<div>
+<span class="text-primary text-sm font-bold tracking-widest uppercase">New Arrival</span>
+<h2 class="text-3xl md:text-5xl font-bold tracking-tighter uppercase mt-2">Drop 01 — Control</h2>
+</div>
+<a class="hidden md:block text-sm font-bold tracking-widest uppercase border-b-2 border-primary pb-1" href="#">View All Products</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] bg-[#f5f5f5] overflow-hidden mb-4">
+<img alt="Dominio Hoodie in black" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Premium oversized black hoodie urban streetwear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRzlnvs6Nqf9UQYYzGhWT3PfcoeqyPDyIdVqxOMmExlyOglkQChYP0uP2RfoUlncgRN3KEiWzEHv1ulXKvwpEqEg7J47idm6PNGOc9mBYeHSD30hiqeXJbcB5w-K1mcJJBN6BSGAPwwpsJ1jUiI2a699ELWNV1MhWhMdEqpgfobCtcnlQE52E3qFNBA8obTOs7vZBkkIaCtMqDG0h18kclZkIr3m2a1uuLJOQVuj3NmHSp1EmKEKr0-BmZhDJzXUvJyH2H98g65d4"/>
+<div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-full bg-white text-black py-3 text-xs font-bold tracking-widest uppercase hover:bg-primary hover:text-white transition-colors">Quick Add</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-lg font-bold uppercase tracking-tight">Dominio Hoodie</h3>
+<p class="text-sm text-gray-500 tracking-wider">Oversized / Heavyweight</p>
+</div>
+<span class="font-bold text-lg">$85.00</span>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] bg-[#f5f5f5] overflow-hidden mb-4">
+<img alt="Sombra Tee in asphalt" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Minimalist urban tee shirt in dark gray" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4xMqGOqzVMSUvXHdAx4NKzveJIPiA6gcemt-S8H7ZK5_rn1tEmIVRHxUYGDTvWzGDHczrwl7fgvBcOuvAjc_2iVKkvML1qeV1x9OQ1-PBGap0KKYmzaLSONYttZiN_dit2R65hATOA37pxKmF5Uq_1oCG0tY9WdABw6TZxkDbBli8Sn0iZ5Ts9OR5PBvOpCj8YRxVV6NXZyD---VQvOmyQud51wK1VkO0WiK5P4glKI_OwpcdAuhWgQVOfLCw93RpbH18kdvInPw"/>
+<div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-full bg-white text-black py-3 text-xs font-bold tracking-widest uppercase hover:bg-primary hover:text-white transition-colors">Quick Add</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-lg font-bold uppercase tracking-tight">Sombra Tee</h3>
+<p class="text-sm text-gray-500 tracking-wider">Boxy Fit / Raw Edge</p>
+</div>
+<span class="font-bold text-lg">$45.00</span>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] bg-[#f5f5f5] overflow-hidden mb-4">
+<img alt="Void Cargo pants" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Technical urban cargo pants architectural design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA04tP4kFNTjMi98r_hObrbmMlN-eD5vuyVabrqg71bPsknKXAr5NhFrOPHw9w2F8Lq04Scc7pDvfMBJbW3mSUX64aGAtFgTr9-pDzdCCKVlXXK1qbqSsl8cKYozUW6dZa0v4XeDuMuLGwTma0dPtjaOKKSAjDBt7ybYqRbOISyUeLJNJcDtrZ3MWKxyVmIGrUMsGiFUesN6epYzjm3kwHGrjCAvU-HJzwdHDZndCWvOMerEMCRNzYjbQMWPIMkRtpHojH58P7qLuY"/>
+<div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-full bg-white text-black py-3 text-xs font-bold tracking-widest uppercase hover:bg-primary hover:text-white transition-colors">Quick Add</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-lg font-bold uppercase tracking-tight">Void Cargo</h3>
+<p class="text-sm text-gray-500 tracking-wider">Multi-pocket / Structured</p>
+</div>
+<span class="font-bold text-lg">$110.00</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Campaign Section -->
+<section class="bg-deep-blue w-full py-24 md:py-32 relative overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-20 flex flex-col md:flex-row items-center gap-12 lg:gap-24">
+<div class="w-full md:w-3/5 aspect-[16/9] md:aspect-square overflow-hidden bg-gray-900 order-2 md:order-1">
+<img alt="Campaign editorial photography" class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-1000" data-alt="Editorial urban fashion photography in dark atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuxNZeYMt_NTbKEYAV8bwhMXK1QrGGug6mCKVp9lmFoNJJ4_-FafZxmhiGb05AtZrYmR4B3Uo_49V--TDC1hpaf5ClLC8rZfyWbL7hTILKFeUfQF7j5oal-hzLYv2IimMX15CbYgzUPHSyDolGjkn8kT1-cQ14R0oeSF_fccXT3ZG99HOlUQutwY5XNDu2dEkS6V-JYsBMAv_APdWTiCm7VDlrVNBqmqUtsCqmfWOqHRH98oJMN5UyvQ-g-eT76LZDTbh9ZRluP0M"/>
+</div>
+<div class="w-full md:w-2/5 text-white order-1 md:order-2">
+<div class="w-12 h-1 bg-primary mb-8"></div>
+<h2 class="text-4xl md:text-6xl font-bold tracking-tighter leading-tight mb-8">
+                    Silencio no es debilidad. <br/>
+<span class="text-primary italic">It’s control.</span>
+</h2>
+<p class="text-gray-400 text-lg mb-10 max-w-md tracking-wide">
+                    The modern landscape belongs to those who move without noise. Every piece is an armor of presence.
+                </p>
+<button class="border border-white/30 text-white px-8 py-4 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-black transition-all">
+                    View Campaign
+                </button>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-32 bg-white px-6">
+<div class="max-w-4xl mx-auto text-center">
+<div class="mb-12 flex justify-center">
+<div class="size-12 bg-primary flex items-center justify-center">
+<span class="text-white text-xl font-bold uppercase">E</span>
+</div>
+</div>
+<h2 class="text-3xl md:text-5xl font-bold tracking-tighter uppercase mb-12">Controlled Rebellion</h2>
+<div class="space-y-6">
+<p class="text-xl md:text-2xl font-light leading-relaxed tracking-wide text-gray-800">
+                    ELENMOX is a <span class="font-bold italic">unisex urban movement.</span> Latina energy. Global vision. Oversized structure. Controlled rebellion.
+                </p>
+<p class="text-xl md:text-2xl font-light leading-relaxed tracking-wide text-gray-800">
+                    We don’t follow noise. <span class="text-primary font-bold">We create presence.</span>
+</p>
+</div>
+<div class="mt-16 flex flex-wrap justify-center gap-12 grayscale opacity-50">
+<span class="text-xs font-bold tracking-[0.4em] uppercase">Madrid</span>
+<span class="text-xs font-bold tracking-[0.4em] uppercase">Bogota</span>
+<span class="text-xs font-bold tracking-[0.4em] uppercase">New York</span>
+<span class="text-xs font-bold tracking-[0.4em] uppercase">Tokyo</span>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-deep-blue text-white py-20 px-6 lg:px-20 border-t border-white/5">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+<div class="col-span-1 md:col-span-1">
+<h2 class="text-2xl font-bold tracking-tighter uppercase mb-6">ELENMOX</h2>
+<p class="text-gray-400 text-sm leading-relaxed max-w-xs tracking-wider">
+                        High-end urban aesthetics for the contemporary rebel. Designed for presence.
+                    </p>
+</div>
+<div>
+<h4 class="text-xs font-bold tracking-[0.3em] uppercase text-primary mb-6">Social</h4>
+<ul class="space-y-4">
+<li><a class="text-sm text-gray-300 hover:text-primary transition-colors tracking-widest uppercase" href="#">Instagram</a></li>
+<li><a class="text-sm text-gray-300 hover:text-primary transition-colors tracking-widest uppercase" href="#">TikTok</a></li>
+<li><a class="text-sm text-gray-300 hover:text-primary transition-colors tracking-widest uppercase" href="#">Pinterest</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold tracking-[0.3em] uppercase text-primary mb-6">Support</h4>
+<ul class="space-y-4">
+<li><a class="text-sm text-gray-300 hover:text-primary transition-colors tracking-widest uppercase" href="#">Contact</a></li>
+<li><a class="text-sm text-gray-300 hover:text-primary transition-colors tracking-widest uppercase" href="#">Shipping</a></li>
+<li><a class="text-sm text-gray-300 hover:text-primary transition-colors tracking-widest uppercase" href="#">Returns</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold tracking-[0.3em] uppercase text-primary mb-6">Newsletter</h4>
+<form class="mt-4">
+<div class="flex border-b border-white/20 pb-2">
+<input class="bg-transparent border-none text-xs w-full focus:ring-0 placeholder:text-gray-500 uppercase tracking-widest" placeholder="JOIN THE MOVEMENT" type="email"/>
+<button class="text-primary" type="submit">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<span class="text-[10px] text-gray-500 tracking-[0.4em] uppercase">© 2024 ELENMOX Urban Movement. All rights reserved.</span>
+<div class="flex gap-8">
+<span class="text-[10px] text-gray-500 tracking-[0.4em] uppercase">Privacy Policy</span>
+<span class="text-[10px] text-gray-500 tracking-[0.4em] uppercase">Terms of Service</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
